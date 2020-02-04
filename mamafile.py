@@ -8,10 +8,10 @@ class libav(mama.BuildTarget):
     workspace = 'build'
 
     def dependencies(self):
-        pass
+        self.nothing_to_build()
 
     def configure(self):
-        self.nothing_to_build()
+        pass
 
     def package(self):
         if self.config.is_target_arch_x86():
